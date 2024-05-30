@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_logik</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="card">
+        <div class="storiya">
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1462804993656-fac4ff489837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+             <div class="story">
+                <img src="https://images.unsplash.com/photo-1599624427857-461fd60c23e5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1597413545419-4013431dbfec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D" alt="">
+            </div>
+            <div class="story">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+          
+        </div>
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1577519005828-0d09b071c8f3?q=80&w=365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" id="child">
+            <i class="ri-thumb-up-line"></i>
+        <h1 id="massageHead">My Instsgram Post</h1>
+        </div>
+        <input type="text" placeholder="Yes you can type " id="userinput">
+        <button onclick="changehead()">Submit</button>
+       
+    </div>
+    
+</body>
+<script>
+    x = 1
+    
+    function changehead(){
+        if(x == 1){
+            var userinput = document.querySelector("#userinput").value;
+                document.querySelector("#massageHead").innerText = userinput;
+                document.querySelector('button').innerText = "Back"
+                document.querySelector("#massageHead").addEventListener("click",function(){
+                    document.querySelector(".ri-thumb-up-line").style.transform = "translate(-50%,-50%)scale(1);"
+                })
+                
+            x = 0
+        }else{
+            var massageHead = document.querySelector("#userinput").value;
+                document.querySelector("#massageHead").innerText = "Can you replce here like button";
+               
+                x = 1
+
+        }
+        
+    }
+</script>
+</html>
